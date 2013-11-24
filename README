@@ -1,0 +1,25 @@
+This is a mirror of http://www.vim.org/scripts/script.php?script_id=4779
+
+Slamhound integration for vim.
+
+First install:
+
+        slamhound:      https://github.com/technomancy/slamhound
+        fireplace.vim:  https://github.com/tpope/vim-fireplace
+
+If you are running Vim 7.3.802 or earlier, then you will also need to install
+the Clojure runtime files:
+
+        https://github.com/guns/vim-clojure-static
+
+Then from a Clojure buffer run:
+
+        :Slamhound
+
+No mappings are supplied, but a useful mapping may be:
+
+        nnoremap <LocalLeader>sh :Slamhound<CR>
+
+A function, slamhound#reconstruct(file, textwidth), is available for more
+granular control.
+
